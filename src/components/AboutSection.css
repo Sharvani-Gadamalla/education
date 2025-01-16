@@ -1,0 +1,120 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh; /* Viewport height */
+    width: 100vw; /* Viewport width */
+    box-sizing: border-box; /* Prevent overflow caused by padding */
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%; /* Adjust for centering if needed */
+    width: 90%; /* Ensure it doesn't exceed the viewport width */
+  }
+  
+  .about-header {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .about-header h4 {
+    color: orange;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-header p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-button, .vision-button {
+    padding: 0.7rem 1.2rem;
+    border: 1px solid orange;
+    background: transparent;
+    color: orange;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .view-programs-button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background: orange;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .about-images {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.2rem;
+
+  }
+  
+  .about-image1 {
+    width: 45%;
+  
+    border-radius: 5px;
+    height: auto;
+  
+  }
+  
+  .about-image2 {
+    width: 45%;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+    height: 360px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
+
+  }
+  
+  .stat-box {
+    flex: 1;
+    height: 80px;
+    width: 180px;
+    padding: 1.5rem;
+    background: #ffe5d4;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poor Richard', serif;
+    text-align: center;
+  }
+  .stat-box2{
+    background: orange;
+    height: 80px;
+    width: 80px;
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poor Richard', serif;
+    text-align: center;
+  }
+  

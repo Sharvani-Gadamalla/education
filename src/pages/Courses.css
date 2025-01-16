@@ -1,0 +1,241 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f57c00;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hero-section {
+    background: url('https://s3-alpha-sig.figma.com/img/6e9d/b03a/b5308ecce5f4222706b129344109e8d3?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W3LbD0gERAz1C4gZWQJJ-CoIz-2rScSCbt1FBdcvyjjMR27lYF2y9hJPIifT33rTMtlyCTqZB61uxhX6FpR2MTXG1GoylDobJkprEooIGjcVWWCe~-BXEKiduJb3rR8GthmZYnEQuDEaIPGs14ou3FC2ZLRbQJcjQrhPNsOFV5GmpG8Ykvg-QMyoFj4JmEedxU4oOtEw3iF21Z3DyDxL2LED5bcylYeqLBudVMQDrtIUAoOchy1lmN0yRXcE9RNsWqdtiwcHUqheID7Bz8QKschY6NKPl-1BlOkDduwWx~eXf3oDHKGCsao7L0hM-zAqgE9q4tPJzNhIFbit-7Myxw__') center/cover no-repeat;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .hero-section h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .courses {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .course-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+  }
+   */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes full height of the viewport */
+  }
+  
+  .navbar {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white; /* Adjust background as needed */
+    color: orange;
+    padding: 10px;
+    text-align: center;
+    z-index: 2; /* Ensure the navbar stays above the background */
+  }
+  
+  .backnav {
+    height: 100vh; /* Ensures the container takes full height of the viewport */
+    width: 100vw; /* Ensures the container takes full width of the viewport */
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 165, 0, 0.6), rgba(173, 216, 230, 0.6)), url('./women222.jpg'); /* Adding gradient overlay */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0; /* No negative margin */
+    padding-top: 60px; /* Ensure space is created for the navbar */
+  }
+  
+  .title-container {
+    position: absolute;
+    top: 50%; /* Position the container in the vertical center */
+    left: 50%; /* Position the container in the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust to precisely center the container */
+    text-align: center;
+    color: orange; /* Text color */
+  }
+  
+  .course-title {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a shadow for better visibility */
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row by default */
+    gap: 20px;
+    padding: 40px 0;
+    flex-grow: 1; /* Ensure the grid grows to take up space between the header and footer */
+    margin-top: 80px;
+  }
+  
+  .course-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  /* .course-card:hover {
+    transform: translateY(-5px);
+  } */
+  
+  .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Adjust grid for laptops */
+  @media (max-width: 1024px) {
+    .courses-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 images per row for laptops */
+    }
+  }
+  
+  /* Adjust grid for tablets */
+  @media (max-width: 768px) {
+    .courses-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row for tablets */
+    }
+  }
+  
+  /* Adjust grid for mobile */
+  @media (max-width: 480px) {
+    .courses-grid {
+      grid-template-columns: 1fr; /* 1 image per row for mobile */
+    }
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

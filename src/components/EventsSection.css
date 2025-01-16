@@ -1,0 +1,498 @@
+   /* .new-events-section {
+    padding: 1rem 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    margin-top: 0.20%;
+
+  }
+  
+  .new-consultation-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  .new-consultation-content {
+    width: 50%;
+    padding-right: 2rem;
+    text-align: left;
+  }
+  
+  .new-consultation-banner h2 {
+    font-size: 2.5rem;
+    color: #f97316;
+    line-height: 0.9;
+  }
+  
+  .new-consultation-content .new-updated-news {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #d14b0c;
+    line-height: 0.9;
+  }
+  
+  .new-consultation-banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+   
+  }
+  
+  .new-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+  }
+  
+  .new-stat-item {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .new-stat-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .new-stat-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  .new-stat-item2 span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+    margin-right: 250px;
+    
+  }
+  
+  .new-stat-item2 p {
+    font-size: 1rem;
+    color: #333;
+ 
+  }
+  
+  .new-events-heading h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    margin-top: -10%;
+  }
+  
+  .new-events-gallery1 {
+    display: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 0.1rem;
+    width: 650px;
+    margin-right: -90%;
+  }
+  .new-events-gallery2 {
+    display: flex-end;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+    width: 650px;
+    margin-left: -90%;
+  }
+  
+  .new-event-image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;
+  }
+  
+  .new-event-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-event-text {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  
+  .new-event-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .new-consultation-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .new-consultation-content {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .new-stats {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .new-events-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .new-event-image-container {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  
+    .new-event-text {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .new-event-text p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+   */
+
+
+   .events-section {
+    padding: 1rem 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .consultation-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .consultation-text {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .consultation-text h2 {
+    font-size: 2.5rem;
+    color: #f97316;
+  }
+  
+  .latest-news {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #d14b0c;
+  }
+  
+  .consultation-text p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .stats-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+  
+  .stat-item {
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  
+  .stat-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+    margin-right: 250px;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 250px;
+    display: inline;
+  }
+  
+  .event-gallery {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .first-event {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .second-event {
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+  
+  .event-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .first-event .event-text {
+    text-align: left;
+  }
+  
+  .second-event .event-text {
+    text-align: right;
+  }
+  
+  .event-image {
+    width: 45%;
+  }
+  
+  .event-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .consultation-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .consultation-text {
+      width: 100%;
+    }
+  
+    .stats-panel {
+      align-items: center;
+    }
+  
+    .event-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .event-text {
+      width: 100%;
+      text-align: center;
+      margin-left: 300%;
+    }
+  
+    .event-image {
+      width: 100%;
+    }
+  }
+  .event-para1 {
+    margin-left: 10%;
+  }
+  .event-para2 {
+    margin-left: 10%;
+  }
+  
+  .consultation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    width:100%;
+  }
+  
+  .text-content h2 {
+    color: #f26b26;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-content .highlight {
+    font-weight: bold;
+  }
+  
+  .text-content p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+  }
+  .users-info{
+    margin-left: -90%;
+  }
+  .students-info{
+    margin-bottom: -40px;
+  
+  }
+  
+  .users-info, .students-info {
+    text-align:left;
+    align-items: left;
+    display: inline;
+   
+  }
+  
+  .avatars {
+    display: flex;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid white;
+  }
+  
+  .stats p {
+    font-size: 1rem;
+    color:orange;
+  }
+  
+  strong {
+    font-size: 1.2rem;
+  }
+  .stats-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .stat-item {
+    display: flex; /* Use flex to align content within each item */
+    flex-direction: column; /* Stack span and p in a column inside the item */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .stats-row .stat-item span,
+  .stats-row .stat-item p {
+    display: inline-block;
+    width: 150px; /* Set a consistent width for both elements */
+    text-align: center; /* Center the content within the block */
+  }
+  
+  .separator-line {
+    width: 2px;
+    height: 60px;
+    background-color: #ccc;
+    margin: 0 1rem;
+  }
+  .stat-item {
+    display: inline-flex; /* Use flexbox for inline alignment */
+    align-items: center;  /* Align text vertically */
+    gap: 0.5rem;          /* Adjust spacing between span and p */
+    margin-bottom: 1rem;
+  }
+  
+  .stat-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  /* Updated banner section for inline layout */
+.consultation-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.consultation-text {
+  width: 60%;
+}
+
+.stats-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.separator-line {
+  width: 2px;
+  height: 60px;
+  background-color: #ccc;
+  margin: 0 1rem;
+}
+
+/* Additional responsive design */
+@media (max-width: 768px) {
+  .consultation-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .consultation-text {
+    width: 100%;
+  }
+
+  .stats-panel {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .separator-line {
+    height: 40px;
+  }
+}
+
+
+

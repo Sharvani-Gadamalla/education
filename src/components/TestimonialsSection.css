@@ -1,0 +1,90 @@
+.testimonials-section {
+  padding: 4vh 2vw;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 100vh; /* Ensure it uses full viewport height */
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+.testimonials-heading {
+  margin-bottom: 2vh;
+}
+
+.testimonials-heading h2 {
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.testimonials-heading p {
+  font-size: 1vw;
+  color: #666;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* First row with 3 cards */
+  gap: 2vh 3vw; /* Adjusted gap for better spacing between cards */
+  margin: 0 2vw; /* Adds margin on left and right */
+}
+
+.testimonial-card {
+  background: #FBF2EB;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+}
+
+.testimonial-image-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.testimonial-image img {
+  width: 6vw; /* Smaller image size */
+  height: 6vw;
+  max-width: 50px; /* Max size to ensure it scales well */
+  max-height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  margin-top: 0.8rem;
+}
+
+.testimonial-content h3 {
+  font-size: 1.1vw;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-title {
+  font-size: 0.8vw;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+  font-size: 0.8vw;
+  line-height: 1.4;
+}
+
+.testimonial-rating {
+  font-size: 1vw;
+  color: #ffcc00;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr); /* For larger screens, 4 cards in a row */
+  }
+}
