@@ -31,27 +31,33 @@ function Footer() {
         </div>
         <div className="footer-section explore">
           <h4>Explore</h4>
+          <div className='footer-ds1'>
           <p><a href="/">Home</a></p>
           <p><a href="/academics">Academics</a></p>
           <p><a href="/events">Events</a></p>
           <p><a href="/admission">Admission</a></p>
+          </div>
         </div>
-        {/* <div className="footer-section">
-          <h4>Explore</h4>
-          <p><a href="/">Home</a></p>
-          <p><a href="/academics">Academics</a></p>
-          <p><a href="/events">Events</a></p>
-          <p><a href="/admission">Admission</a></p>
-        </div> */}
         <div className="footer-section">
           <h4>Contact Us</h4>
           <p><FontAwesomeIcon icon={faPhone} /> <a href="tel:+919881234655">+91 9881234655</a></p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:admissions@edunoveacademy.com">admissions@edunoveacademy.com</a></p>
+          {/* <p className='footer-section6'><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:admissions@edunoveacademy.com">admissions@edunoveacademy.com</a></p> */}
+
+          <p className="happy">
+        <FontAwesomeIcon icon={faEnvelope} />
+        <a href="mailto:admissions@edunoveacademy.com">admissions@edunoveacademy.com</a>
+    </p>
         </div>
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <h4>Location</h4>
           <p><FontAwesomeIcon icon={faLocationDot} /> 3rd Floor, Cyber Heights, Hitech City Road, Madhapur, Hyderabad, Telangana, India - 500081</p>
-        </div>
+        </div> */}
+
+        <div className="footer-section happy-loc">
+    <h4 className='happy-loc h4 '>Location</h4>
+    <p className='equal'><FontAwesomeIcon icon={faLocationDot} /> 3rd Floor, Cyber Heights, Hitech City Road, Madhapur, Hyderabad, Telangana, India-500081</p>
+    </div>
+
       </div>
     </footer>
   );

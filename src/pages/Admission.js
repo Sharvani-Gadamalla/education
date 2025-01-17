@@ -1,23 +1,34 @@
-import React from 'react';
-import './Admission.css';
+import React, { useRef } from "react";
+import "./Admission.css";
 import Tech from "./Tech.png";
 import Business from "./business.png";
-import Footer from './Footer';
-
+import Footer from "./Footer";
 
 function Admission() {
+  // Create a reference for the Name and Email fields
+  const nameEmailRef = useRef(null);
+
+  // Scroll to the Name and Email fields
+  const handleApplyNowClick = () => {
+    nameEmailRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="desktop-container">
       {/* Text Section */}
       <div className="text-section">
-        <h1>"Where Learning Meets Opportunity <br /> Join Our Academic Community!"</h1>
+        <h1>
+          "Where Learning Meets Opportunity <br /> Join Our Academic Community!"
+        </h1>
         <p>
           Embark on a transformative educational journey where knowledge meets
           real-world<br /> opportunities. Join our vibrant academic community and shape
           a brighter future<br /> today.
         </p>
         <p className="registration">Now Open For Registration</p>
-        <button className="apply-button">Apply Now</button>
+        <button className="apply-button" onClick={handleApplyNowClick}>
+          Apply Now
+        </button>
       </div>
 
       {/* Cards Section */}
@@ -40,7 +51,7 @@ function Admission() {
       </div>
 
       {/* Form Section */}
-      <div className="form-container">
+      <div className="form-container" ref={nameEmailRef}>
         <form className="form">
           <div className="form-row">
             <input type="text" placeholder="Name" required />
@@ -56,13 +67,14 @@ function Admission() {
           </button>
         </form>
       </div>
+
+      {/* Footer Section */}
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
 }
 
 export default Admission;
-
 

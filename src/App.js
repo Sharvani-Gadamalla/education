@@ -1,29 +1,4 @@
-// import React from 'react';
-// import Navbar from './components/Navbar';
-// import HeroSection from './components/HeroSection';
-// import './App.css';
-// import AboutSection from './components/AboutSection';
-// import ScholarshipSection from './components/ScholarshipSection';
-// import TestimonialsSection from './components/TestimonialsSection';
-// import EventsSection from './components/EventsSection';
-// import UpcomingEvents from './components/UpcomingEvents';
 
-
-// function App() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <HeroSection />
-//       <AboutSection/>
-//       <ScholarshipSection/>
-//       <TestimonialsSection/>
-//       <EventsSection/>
-//       <UpcomingEvents/>
-//     </div>
-//   );
-// }
-
-// export default App;
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Ensure Navbar is imported here

@@ -1,64 +1,118 @@
 .footer {
-    background-color: #FF7F00;
-    color: white;
-    padding: 40px;
-    text-align: left;
-    font-family: Arial, sans-serif;
-    margin-top: 40px; /* Adds gap between footer and the previous component */
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 250px;
-    margin: 0 15px;
-  }
-  
-  .footer-section h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .footer-section p, .footer-section a {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-section a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons a {
-    margin-right: 10px;
-    font-size: 20px;
-    color: white;
-  }
-  
-  .footer-section p {
-    line-height: 1.6;
-  }
-  
-  .footer-section.explore ul {
-    list-style: none;
-    padding: 0;
-    margin-right: 50%;
-  }
-  
-  .footer-section.explore ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section.explore ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  
+  background-color: #FF7F00;
+  color: white;
+  padding: 40px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin-top: 40px; /* Adds gap between footer and the previous component */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 15px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-section p, .footer-section a {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+
+ .footer-ds1 {
+  text-align: left;  /* Align text and links to start at the same margin */
+  flex: 1;
+  padding-left: 35%; /* Adjust for overall centering */
+}
+
+.footer-section.explore {
+text-align: center;
+flex: 1;
+min-width: 250px;
+padding-left: 5%; /* Adjust for precise centering */
+padding-right: 5%;
+}
+
+.footer-section.explore ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer-section.explore ul li {
+margin-bottom: 10px;
+}
+
+.footer-section.explore ul li a {
+text-decoration: none;
+color: white;
+}
+
+.footer-section.explore ul li a:hover {
+text-decoration: underline;
+}
+
+.happy {
+display: flex; /* Align icon and email in one line */
+align-items: center; /* Center the icon and email vertically */
+}
+
+.happy a {
+margin-left: 10px; /* Space between the email icon and email text */
+}
+/* Happy Loc class to move the Location section to the right */
+.happy-loc {
+  text-align: left;  /* Align text to the left */
+  flex: 1;
+  min-width: 180px;
+  margin-left: 60px;  /* Push the Location section to the right */
+  padding-right: 0.50%; /* Space on the right */
+}
+
+/* Adjust the Location heading */
+.happy-loc h4 {
+  margin-left: 15px; /* Adds space between heading and left edge */
+  margin-bottom: 10px; /* Optional: Adds space below the heading */
+}
+
+/* Align the location icon and location text inline */
+.happy-loc p {
+  display: inline-flex;  /* Align icon and text inline */
+  align-items: center;  /* Vertically align icon and text */
+  gap: 10px;  /* Adds space between the icon and the location text */
+  margin-top: 0px;  /* Removes any default margin */
+}
+
+/* Ensure the icon appears directly before the text */
+.happy-loc p FontAwesomeIcon {
+  margin-right: 5px;  /* Optional: Small space between icon and text */
+}

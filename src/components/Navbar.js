@@ -1,10 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logo.png"; // Adjust the path if necessary
-import { FaSearch } from "react-icons/fa"; // Importing a search icon from react-icons
+import logo from "../assets/logo.png";
+import { FaSearch } from "react-icons/fa";
 
 function Navbar() {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [showSearch, setShowSearch] = useState(false);
+
+    const handleSearchToggle = () => {
+        setShowSearch(!showSearch);
+    };
+
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        if (searchTerm.trim()) {
+            console.log("Searching for:", searchTerm); // Replace with navigation or search logic
+            // alert(`Searching for: ${searchTerm}`);
+        }
+        setShowSearch(false); // Hide search after submission
+    };
+
     return (
         <nav className="navbar">
             <div className="logo-container">
@@ -18,10 +38,22 @@ function Navbar() {
                 <li><Link to="/admission">Admission</Link></li>
                 <li><Link to="/login">Log in</Link></li>
             </ul>
-            <button className="search-button">
+            <button className="search-button" onClick={handleSearchToggle}>
                 <FaSearch className="search-icon" />
                 Search Course
             </button>
+            {showSearch && (
+                <form className="search-form" onSubmit={handleSearchSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Search for courses..."
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        className="search-input"
+                    />
+                    <button type="submit" className="submit-button">Go</button>
+                </form>
+            )}
         </nav>
     );
 }
