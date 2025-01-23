@@ -40,7 +40,7 @@ function Navbar() {
             </ul>
             <button className="search-button" onClick={handleSearchToggle}>
                 <FaSearch className="search-icon" />
-                Search Course
+                Search 
             </button>
             {showSearch && (
                 <form className="search-form" onSubmit={handleSearchSubmit}>
